@@ -12,7 +12,7 @@ def index():
   return HTMLResponse('<h1>A self-documenting web app v1</h1>')
 
 @app.post('/generate')
-def generate(request: RequesteMessage):
+def generate(request: RequestMessage):
   result = {
     "errcode": 0,
     "errmsg": "",
